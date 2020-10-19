@@ -1,0 +1,258 @@
+/*
+Theme Name: Desenvolvimentos
+Theme URI: http://www.desenvolvimentos.com.br
+Author: HC Desenvolvimentos
+Author URI: https://hcdesenvolvimentos.com.br;
+Description: Descrção do thema.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: desenvolvimentos
+Tags: 
+
+--------------------------------------------
+ESTRUTURAÇÃO BASE (HC Desenvolvimentos v1)
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+
+/* IMPORTAÇÃO DE ARQUIVOS*/
+	@import url("fonts.css");
+/* IMPORTAÇÃO MEDIA QUERYS*/
+
+/* IMPORTAÇÃO DE ARQUIVOS*/
+
+
+/* VARIÁVEIS */
+:root{
+  --montserrat: 'Montserrat', sans-serif;
+  --open-sans: 'Open Sans', sans-serif;
+  --azul-principal: #009bdb;
+}
+/* VARIÁVEIS */
+
+
+/* IMPORTAÇÃO DE FONTES*/
+@font-face {
+	
+}
+/* IMPORTAÇÃO DE FONTES*/
+
+
+/* GERAL */
+html, body, figure, p, h1, h2, h3, h4, h5, h6, ul{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	font-size: 0;
+}
+
+/*ESTILOS GERAIS*/
+	.lab-container{}
+	.lab-col{}
+	nav.lab-nav{}
+		nav.lab-nav ul{}
+			nav.lab-nav ul li{}
+				nav.lab-nav ul li.lab-nav-v1{}
+				nav.lab-nav ul li a{}
+	figure{}
+	figcaption{}
+	section{}
+/*HEADER*/
+	header{}
+		header div.lab-container{}
+			header div.lab-container{}
+				header div.lab-container div.lab-col{}
+					header div.lab-container div.lab-col figure{}
+						header div.lab-container div.lab-col figure img{}
+						header div.lab-container div.lab-col figure figcaption{}
+					header div.lab-container div.lab-col .lab-nav{}
+						header div.lab-container div.lab-col .lab-nav ul{}
+							header div.lab-container div.lab-col .lab-nav ul li{}
+							header div.lab-container div.lab-col .lab-nav ul li.lab-nav-v1{}
+								header div.lab-container div.lab-col .lab-nav ul li a{}
+/*HOME PAGE*/
+	.pg-inicial{}
+		.pg-inicial section{}
+		.pg-inicial section:nth-child(1){}
+			.pg-inicial section:nth-child(1) div.lab-container{}
+				.pg-inicial section:nth-child(1) div.lab-container article.lab-content{}
+					.pg-inicial section:nth-child(1) div.lab-container article.lab-content h2{}
+					.pg-inicial section:nth-child(1) div.lab-container article.lab-content p{}
+					.pg-inicial section:nth-child(1) div.lab-container article.lab-content a{}
+					.pg-inicial section:nth-child(1) div.lab-container article.lab-content figure{}
+						.pg-inicial section:nth-child(1) div.lab-container article.lab-content figure img{}
+						.pg-inicial section:nth-child(1) div.lab-container article.lab-content figure figcaption{}
+
+		.pg-inicial section:nth-child(2){}
+			.pg-inicial section:nth-child(2) div.lab-container{}
+				.pg-inicial section:nth-child(2) div.lab-container article.lab-content{}
+					.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col{}
+					.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col figure{}
+						.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col figure img{}
+						.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col figure figcaption{}
+					.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col div.lab-content-text{}
+						.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col div.lab-content-text h2{}
+						.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col div.lab-content-text p{}
+
+		.pg-inicial section:nth-child(3){}
+			.pg-inicial section:nth-child(3) div.lab-container{}
+				.pg-inicial section:nth-child(3) div.lab-container article.lab-content{}
+					.pg-inicial section:nth-child(3) div.lab-container article.lab-content h2{}
+					.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul{}
+						.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li{}
+							.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li figure{}
+								.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li figure img{}
+								.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li figure figcaption{}
+							.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li h3{}
+							.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li p{}
+
+		.pg-inicial section:nth-child(4){}
+			.pg-inicial section:nth-child(4) article.lab-content{}
+				.pg-inicial section:nth-child(4) div.lab-container{}
+					.pg-inicial section:nth-child(4) div.lab-container .lab-content-box{}
+						.pg-inicial section:nth-child(4) div.lab-container .lab-content-box.right{}
+						.pg-inicial section:nth-child(4) div.lab-container .lab-content-box.left{}
+						.pg-inicial section:nth-child(4) div.lab-container figure{}
+							.pg-inicial section:nth-child(4) div.lab-container figure img{}
+							.pg-inicial section:nth-child(4) div.lab-container figure figcaption{}
+
+		.pg-inicial section:nth-child(5){}
+			.pg-inicial section:nth-child(5) article.lab-container{}
+				.pg-inicial section:nth-child(5) article.lab-container div.lab-col{}
+					.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content{}
+						.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content h2{}
+						.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content p{}
+						.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content ul{}
+							.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content ul li{}
+								.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content ul li span{}
+								.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content ul li h3{}
+								.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content ul li p{}
+					.pg-inicial section:nth-child(5) article.lab-container div.lab-col figure{}
+						.pg-inicial section:nth-child(5) article.lab-container div.lab-col figure img{}
+						.pg-inicial section:nth-child(5) article.lab-container div.lab-col figure figcaption{}
+					
+		.pg-inicial section:nth-child(6){}
+			.pg-inicial section:nth-child(6) article.lab-container{}
+				.pg-inicial section:nth-child(6) article.lab-container .lab-col{}
+					.pg-inicial section:nth-child(6) article.lab-container .lab-col figure{}
+						.pg-inicial section:nth-child(6) article.lab-container .lab-col figure img{}
+						.pg-inicial section:nth-child(6) article.lab-container .lab-col figure figcaption{}
+				.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content{}
+					.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content h2{}
+					.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content ul{}
+						.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content ul li{}
+					.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content p{}
+
+		.pg-inicial section:nth-child(7){}
+			.pg-inicial section:nth-child(7) article.lab-container{}
+				.pg-inicial section:nth-child(7) article.lab-container .lab-col{}
+					.pg-inicial section:nth-child(7) article.lab-container .lab-col figure{}
+						.pg-inicial section:nth-child(7) article.lab-container .lab-col figure img{}
+						.pg-inicial section:nth-child(7) article.lab-container .lab-col figure figcaption{}
+				.pg-inicial section:nth-child(7) article.lab-container .lab-content{}
+					.pg-inicial section:nth-child(7) article.lab-container .lab-content h6{}
+					.pg-inicial section:nth-child(7) article.lab-container .lab-content h2{}
+					.pg-inicial section:nth-child(7) article.lab-container .lab-content p{}
+
+		.pg-inicial section:nth-child(8){}
+			.pg-inicial section:nth-child(8) article.lab-container{}
+				.pg-inicial section:nth-child(8) article.lab-container .lab-col{}
+					.pg-inicial section:nth-child(8) article.lab-container .lab-col figure{}
+						.pg-inicial section:nth-child(8) article.lab-container .lab-col figure img{}
+						.pg-inicial section:nth-child(8) article.lab-container .lab-col figure figcaption{}
+					.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content h2{}
+					.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content p{}
+					.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul{}
+						.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul li{}
+							.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul li figure{}
+								.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul li figure img{}
+								.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul li figure figcaption{}
+
+		.pg-inicial section:nth-child(9){}
+			.pg-inicial section:nth-child(9) article.lab-container{}
+				.pg-inicial section:nth-child(9) article.lab-container .lab-col{}
+					.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content{}
+						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content h3{}
+						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content p{}
+						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content div.lab-contact{}
+							.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content div.lab-contact p{}
+						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content strong{}
+						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content p{}
+						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content div.lab-link{}
+							.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content div.lab-link a{}
+						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content div.lab-content-map{}
+
+/*FOOTER*/
+	footer{}
+		footer div.lab-container{}
+			footer div.lab-container div.lab-col-3{}
+				footer div.lab-container div.copyright{}
+					footer div.lab-container div.copyright span{}
+				footer div.lab-container div.contact{}
+					footer div.lab-container div.contact strong{}
+				footer div.lab-container div.social{}
+					footer div.lab-container div.social ul{}
+						footer div.lab-container div.social ul li{}
+/* MEDIA QUERY */
+@media(max-width: 1430px){
+	
+}
+
+@media(max-width: 1300px){
+	
+}
+
+@media(max-width: 1200px){
+	
+}
+
+@media(max-width: 991px){
+	
+}
+
+@media(max-width: 850px){
+	
+}
+
+@media(max-width: 768px){
+	
+}
+
+@media(max-width: 690px){
+	
+}
+
+@media(max-width: 670px){
+	
+}
+
+@media(max-width: 550px){
+	
+}
+
+@media(max-width: 500px){
+	
+}
+
+@media(max-width: 400px){
+	
+}
+
+@media(max-width: 340px){
+	
+}
