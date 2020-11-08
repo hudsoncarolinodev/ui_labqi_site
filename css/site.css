@@ -30,7 +30,9 @@ font-family: 'Open Sans', sans-serif;
 
 
 /* IMPORTAÇÃO DE ARQUIVOS*/
-	@import url("fonts.css");
+	/*@import url("fonts.css");*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* IMPORTAÇÃO MEDIA QUERYS*/
 
 /* IMPORTAÇÃO DE ARQUIVOS*/
@@ -44,25 +46,39 @@ font-family: 'Open Sans', sans-serif;
 }
 /* VARIÁVEIS */
 
+/* IMPORTAÇÃO DE FONTES*/
+	@font-face {
+		
+	}
 
 /* IMPORTAÇÃO DE FONTES*/
-@font-face {
-	
-}
-/* IMPORTAÇÃO DE FONTES*/
-
 
 /* GERAL */
-html, body, figure, p, h1, h2, h3, h4, h5, h6, ul{
-	margin: 0;
-	padding: 0;
-}
-ul{
-	font-size: 0;
-}
+	html, body, figure, p, h1, h2, h3, h4, h5, h6, ul{
+		margin: 0;
+		padding: 0;
+		font-family: 'Rubik', sans-serif;
+		box-sizing: border-box;
+	}
+	ul{
+		font-size: 0;
+	}
+	body{
+		padding-top: 104px;
+		box-sizing: border-box;
+	}
 
 /*ESTILOS GERAIS*/
-	.lab-container{}
+	.lab-container{
+		width: 100%;
+		max-width: 1196px;
+		margin:0 auto;
+	}
+	.lab-container-full{
+		width: 100%;
+		max-width: 1440px;
+		margin:0 auto;
+	}
 	.lab-col{}
 	nav.lab-nav{}
 		nav.lab-nav ul{}
@@ -70,144 +86,744 @@ ul{
 				nav.lab-nav ul li.lab-nav-v1{}
 				nav.lab-nav ul li a{}
 	figure{}
-	figcaption{}
+	figcaption{
+		display: none;
+	}
 	section{}
+	.hidden{
+		display: none;
+	}
+	div.link{}
+		div.link a{
+		    padding: 21px 22px;
+			border-radius: 10px;
+			background: linear-gradient(135deg, #A6B56D 0%, #93B56D 100%);
+			color: #FFFFFF;
+			font-size: 16px;
+			font-weight: 500;
+			letter-spacing: 0;
+			text-align: center;
+			text-decoration: none;
+		    display: inline-block;
+		}
+	.text-left{
+		text-align: left;
+	}
+	.text-right{
+		text-align: right;
+	}
+	.text-center{
+		text-align: center;
+	}
+
 /*HEADER*/
-	header{}
-		header div.lab-container{}
-			header div.lab-container{}
-				header div.lab-container div.lab-col{}
-					header div.lab-container div.lab-col figure{}
-						header div.lab-container div.lab-col figure img{}
-						header div.lab-container div.lab-col figure figcaption{}
-					header div.lab-container div.lab-col .lab-nav{}
-						header div.lab-container div.lab-col .lab-nav ul{}
-							header div.lab-container div.lab-col .lab-nav ul li{}
-							header div.lab-container div.lab-col .lab-nav ul li.lab-nav-v1{}
-								header div.lab-container div.lab-col .lab-nav ul li a{}
+	header{
+		position: fixed;
+		z-index: 2;
+		width: 100%;
+		background: #fff;
+		top:0;
+	}
+	.menuTop{}
+		.menuTop div.lab-container{}
+			.menuTop div.lab-container{
+				display: flex;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+				.menuTop div.lab-container div.lab-col:nth-child(1){
+				    width: 26%;
+				}
+				.menuTop div.lab-container div.lab-col:nth-child(2){
+			        width: 74%;
+				}
+					.menuTop div.lab-container div.lab-col figure{}
+						.menuTop div.lab-container div.lab-col figure img{
+							display: block;
+							width: 100%;
+							max-width: 145px;
+							height: auto;
+						}
+						.menuTop div.lab-container div.lab-col figure figcaption{}
+					.menuTop div.lab-container div.lab-col .lab-nav{}
+						.menuTop div.lab-container div.lab-col .lab-nav ul{
+							display: flex;
+							flex-wrap: wrap;
+							width: 100%;
+							align-items: center;
+							justify-content: space-between;
+							padding-top: 19px;
+						}
+							.menuTop div.lab-container div.lab-col .lab-nav ul li{
+							
+							}
+							.menuTop div.lab-container div.lab-col .lab-nav ul li.lab-nav-v1 a{
+								padding:13px 21px;
+								border-radius: 10px;
+								background: linear-gradient(135deg, #A6B56D 0%, #93B56D 100%);
+								color: #FFFFFF;
+								font-size: 16px;
+								font-weight: 500;
+								letter-spacing: 0;
+								text-align: center;
+							}
+								.menuTop div.lab-container div.lab-col .lab-nav ul li a{
+									width: 45px;
+									color: #49485D;
+									font-size: 16px;
+									font-weight: 500;
+									letter-spacing: 0;
+									line-height: 19px;
+									text-decoration: none;
+								}
+
 /*HOME PAGE*/
 	.pg-inicial{}
-		.pg-inicial section{}
-		.pg-inicial section:nth-child(1){}
-			.pg-inicial section:nth-child(1) div.lab-container{}
-				.pg-inicial section:nth-child(1) div.lab-container article.lab-content{}
-					.pg-inicial section:nth-child(1) div.lab-container article.lab-content h2{}
-					.pg-inicial section:nth-child(1) div.lab-container article.lab-content p{}
-					.pg-inicial section:nth-child(1) div.lab-container article.lab-content a{}
-					.pg-inicial section:nth-child(1) div.lab-container article.lab-content figure{}
-						.pg-inicial section:nth-child(1) div.lab-container article.lab-content figure img{}
-						.pg-inicial section:nth-child(1) div.lab-container article.lab-content figure figcaption{}
+		.pg-inicial section{
+			max-width: 1440px;
+			margin: 0 auto;
+		}
+		.pg-inicial section:nth-child(1){
+			height: 650px;
+			background-position: center;
+			background-size: cover;
+			position: relative;
+		}
+			.pg-inicial section:nth-child(1) article.lab-content{
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+				.pg-inicial section:nth-child(1) article.lab-content h2{
+					color: #FFFFFF;
+					font-size: 72px;
+					font-weight: bold;
+					letter-spacing: 0;
+					margin-bottom: 18px;
+				}
+				.pg-inicial section:nth-child(1) article.lab-content p{
+					color: #FFFFFF;
+					font-size: 18px;
+					letter-spacing: 0;
+					line-height: 32px;
+					padding-bottom: 24px;
+					min-height: 111px;
 
-		.pg-inicial section:nth-child(2){}
+				}
+				.pg-inicial section:nth-child(1) article.lab-content a{
+
+				}
+				.pg-inicial section:nth-child(1) article.lab-content figure{
+					
+				}
+					.pg-inicial section:nth-child(1) article.lab-content figure img{}
+					.pg-inicial section:nth-child(1) article.lab-content figure figcaption{}
+
+		.pg-inicial section:nth-child(2){
+		    padding-bottom: 70px;
+		    margin-bottom: 119px;
+		}
 			.pg-inicial section:nth-child(2) div.lab-container{}
-				.pg-inicial section:nth-child(2) div.lab-container article.lab-content{}
-					.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col{}
-					.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col figure{}
+				.pg-inicial section:nth-child(2) div.lab-container article.lab-content{
+					display: flex;
+					padding-top: 80px;
+				}
+					.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col{
+						width: 50%;
+					}
+					.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col:nth-child(2){
+					    text-align: right;
+					}
+					.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col figure{
+						display: block;
+						height: 415px;
+						width: 100%;
+						max-width: 587px;
+						background-size: cover;
+						background-position: center;
+						position: relative;
+					}
 						.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col figure img{}
-						.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col figure figcaption{}
-					.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col div.lab-content-text{}
-						.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col div.lab-content-text h2{}
-						.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col div.lab-content-text p{}
+						.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col figure figcaption{
+							display: block;
+							height: 148px;
+							width: 148px;
+							background-image:url(../img/icon.svg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-color: #A6B56D;
+							font-size: 0;
+							color: transparent;
+							position: absolute;
+							right: -70px;
+							bottom: -70px;
 
-		.pg-inicial section:nth-child(3){}
-			.pg-inicial section:nth-child(3) div.lab-container{}
-				.pg-inicial section:nth-child(3) div.lab-container article.lab-content{}
-					.pg-inicial section:nth-child(3) div.lab-container article.lab-content h2{}
-					.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul{}
-						.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li{}
-							.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li figure{}
-								.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li figure img{}
-								.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li figure figcaption{}
-							.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li h3{}
-							.pg-inicial section:nth-child(3) div.lab-container article.lab-content ul li p{}
+						}
+					.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col div.lab-content-text{
+						max-width: 485px;
+						display: inline-block;
+						text-align: left;
 
-		.pg-inicial section:nth-child(4){}
+					}
+						.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col div.lab-content-text h2{
+							color: #49485D;
+							font-size: 42px;
+							font-weight: 500;
+							letter-spacing: 0;
+							line-height: 60px;
+							padding-top: 47px;
+							padding-bottom: 34px;
+						}
+						.pg-inicial section:nth-child(2) div.lab-container article.lab-content div.lab-col div.lab-content-text p{
+							opacity: 0.8;
+							color: #49485D;
+							font-size: 16px;
+							letter-spacing: 0;
+							line-height: 32px;
+							text-align: justify;
+						}
+
+		.pg-inicial section:nth-child(3){
+			background-color: #49485D;
+			padding-top: 98px;
+		}
+			.pg-inicial section:nth-child(3){}
+				.pg-inicial section:nth-child(3) article.lab-content{}
+					.pg-inicial section:nth-child(3) article.lab-content h2{
+						color: #FFFFFF;
+						font-size: 42px;
+						font-weight: 500;
+						letter-spacing: 0;
+						line-height: 62px;
+						width: 100%;
+						max-width: 1196px;
+						margin: 0 auto;
+					}
+					.pg-inicial section:nth-child(3) article.lab-content ul{
+						display: flex;
+						justify-content: space-between;
+						margin-top:20px;
+						padding-bottom:206px;
+					}
+						.pg-inicial section:nth-child(3) article.lab-content ul li{
+							min-height: 350px;
+							width: 100%;
+							padding: 60px 100px;
+						}
+							.pg-inicial section:nth-child(3) article.lab-content ul li:hover{
+								background-color: #404359;
+							}
+							.pg-inicial section:nth-child(3) article.lab-content ul li figure{
+								height: 96px;
+								width: 96px;	
+								display: block;
+								border-radius:100%; 
+								background-color: #F9F8F4;
+								margin-bottom: 28px;
+							}
+								.pg-inicial section:nth-child(3) article.lab-content ul li figure img{}
+								.pg-inicial section:nth-child(3) article.lab-content ul li figure figcaption{}
+							.pg-inicial section:nth-child(3) article.lab-content ul li h3{
+								color: #FFFFFF;
+								font-size: 18px;
+								font-weight: 500;
+								letter-spacing: 0;
+								line-height: 32px;
+								margin-bottom: 25px;
+							}
+							.pg-inicial section:nth-child(3) article.lab-content ul li p{
+								opacity: 0.8;
+								color: #FFFFFF;
+								font-size: 16px;
+								letter-spacing: 0;
+								line-height: 26px;
+							}
+
+		.pg-inicial section:nth-child(4){
+			margin-top:80px;
+		}
 			.pg-inicial section:nth-child(4) article.lab-content{}
-				.pg-inicial section:nth-child(4) div.lab-container{}
-					.pg-inicial section:nth-child(4) div.lab-container .lab-content-box{}
-						.pg-inicial section:nth-child(4) div.lab-container .lab-content-box.right{}
-						.pg-inicial section:nth-child(4) div.lab-container .lab-content-box.left{}
+				.pg-inicial section:nth-child(4) div.lab-container{
+					height: 446px;
+					background-size: cover;
+					background-position: center;
+					position: relative;
+					margin-bottom: 330px;
+				}
+					.pg-inicial section:nth-child(4) div.lab-container .lab-content-box{
+						height: 429px;
+						width: 420px;
+						background-color: #FFFFFF;
+						box-shadow: 0 32px 54px 0 rgba(0,0,0,0.1);
+						padding-left: 62px;
+						padding-right: 62px;
+						padding-top: 53px;
+						position: absolute;
+						z-index: 1;
+					}
+						.pg-inicial section:nth-child(4) div.lab-container .lab-content-box.right{
+							right: 38px;
+							top: 140px;
+						}
+						.pg-inicial section:nth-child(4) div.lab-container .lab-content-box.left{
+							left: 38px;
+							top: 140px;
+						}
+						.pg-inicial section:nth-child(4) div.lab-container .lab-content-box h2{
+							color: #49485D;
+							font-size: 42px;
+							font-weight: 500;
+							letter-spacing: 0;
+							line-height: 60px;
+							min-height: 126px;
+							margin-bottom: 14px;
+						}
+						.pg-inicial section:nth-child(4) div.lab-container .lab-content-box p{
+							opacity: 0.8;
+							color: #20304D;
+							font-size: 16px;
+							font-weight: 500;
+							letter-spacing: 0;
+							line-height: 32px;
+							margin-bottom: 20px;
+							position: relative;
+							padding-left:10px;
+						}
+						.pg-inicial section:nth-child(4) div.lab-container .lab-content-box p:before{
+							content: "";
+							display: block;
+							width: 5px;
+							height: 5px;
+							border-radius: 100%;
+							background-color: #A6B56D;
+							position: absolute;
+							left: 0;
+							top: 13px;
+						}
 						.pg-inicial section:nth-child(4) div.lab-container figure{}
 							.pg-inicial section:nth-child(4) div.lab-container figure img{}
 							.pg-inicial section:nth-child(4) div.lab-container figure figcaption{}
 
 		.pg-inicial section:nth-child(5){}
-			.pg-inicial section:nth-child(5) article.lab-container{}
-				.pg-inicial section:nth-child(5) article.lab-container div.lab-col{}
-					.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content{}
-						.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content h2{}
-						.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content p{}
-						.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content ul{}
-							.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content ul li{}
-								.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content ul li span{}
-								.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content ul li h3{}
-								.pg-inicial section:nth-child(5) article.lab-container div.lab-col div.lab-content ul li p{}
-					.pg-inicial section:nth-child(5) article.lab-container div.lab-col figure{}
-						.pg-inicial section:nth-child(5) article.lab-container div.lab-col figure img{}
-						.pg-inicial section:nth-child(5) article.lab-container div.lab-col figure figcaption{}
-					
-		.pg-inicial section:nth-child(6){}
-			.pg-inicial section:nth-child(6) article.lab-container{}
-				.pg-inicial section:nth-child(6) article.lab-container .lab-col{}
-					.pg-inicial section:nth-child(6) article.lab-container .lab-col figure{}
-						.pg-inicial section:nth-child(6) article.lab-container .lab-col figure img{}
-						.pg-inicial section:nth-child(6) article.lab-container .lab-col figure figcaption{}
-				.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content{}
-					.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content h2{}
-					.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content ul{}
-						.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content ul li{}
-					.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content p{}
+			.pg-inicial section:nth-child(5) article.lab-container-full{
+				display: flex;
+				background-color: #F9F8F4;
+			}
+				.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col{
+					width: 50%;
+				}
+					.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col div.lab-content{
+					    padding-left: 130px;
+					}
+						.pg-inicial section:nth-child(5) article.lab-container-full h2{
+							color: #49485D;
+							font-size: 42px;
+							font-weight: 500;
+							letter-spacing: 0;
+							line-height: 60px;
+							margin-bottom: 35px;
+							margin-top: 115px;
+						}
+						.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col div.lab-content>p{
+							opacity: 0.8;
+							color: #20304D;
+							font-size: 16px;
+							font-weight: 500;
+							letter-spacing: 0;
+							line-height: 32px;
+							margin-bottom: 25px;
+						}
+						.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col div.lab-content ul{
+							
+							padding:0 0 20px;
+							margin-top:46px;
+						}
+							.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col div.lab-content ul li{
+								max-width: 80%;
+								border-radius: 4px;
+								background-color: #FFFFFF;
+								box-shadow: 0 14px 44px 0 rgba(0,0,0,0.06);
+								padding-top: 29px;
+								padding-bottom: 29px;
+								padding-left: 81px;
+								margin-bottom: 10px;
+								cursor: pointer;
+								position: relative;
+							}
+								.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col div.lab-content ul li span{
+									height: 40px;
+									width: 33px;
+									display: block;
+									background-position: center;
+									background-repeat: no-repeat;
+									position: absolute;
+									left: 24px;
+								    top: 25px;
+								}
+								.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col div.lab-content ul li h3{
+									color: #20304D;
+									font-size: 18px;
+									letter-spacing: 0;
+									line-height: 34px;
+									font-weight: 400;
+								}
+								.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col div.lab-content ul li p{
+									opacity: 0.8;
+									color: #4D5D7A;
+									font-family: var(--open-sans);
+									font-size: 14px;
+									letter-spacing: 0;
+									line-height: 24px;
+									display: none;
 
-		.pg-inicial section:nth-child(7){}
-			.pg-inicial section:nth-child(7) article.lab-container{}
-				.pg-inicial section:nth-child(7) article.lab-container .lab-col{}
-					.pg-inicial section:nth-child(7) article.lab-container .lab-col figure{}
-						.pg-inicial section:nth-child(7) article.lab-container .lab-col figure img{}
+								}
+					.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col figure{
+						height: 632px;
+						width: 708px;
+						background-color: #A6B56D;
+						position: relative;
+					}
+						.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col figure img{
+							max-width: 87%;
+							position: absolute;
+							right: 0;
+							top: 70px;
+							height: auto;
+						}
+						.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col figure figcaption{}
+					
+		.pg-inicial section:nth-child(6){
+			padding-top: 144px;
+		}
+			.pg-inicial section:nth-child(6) article.lab-container{
+				display: flex;
+				justify-content: space-between;
+				padding-bottom: 40px;
+				margin-bottom: 100px;
+			}
+				.pg-inicial section:nth-child(6) article.lab-container .lab-col{
+					width: 59%;
+				}
+					.pg-inicial section:nth-child(6) article.lab-container .lab-col figure{
+						display: block;
+						max-width: 525px;
+						position: relative;
+					}
+						.pg-inicial section:nth-child(6) article.lab-container .lab-col figure img{
+							max-width: 100%;
+						}
+						.pg-inicial section:nth-child(6) article.lab-container .lab-col figure figcaption{
+							display: block;
+							height: 148px;
+							width: 148px;
+							background-image: url(../img/icon.svg);
+							background-position: center;
+							background-repeat: no-repeat;
+							background-color: #A6B56D;
+							font-size: 0;
+							color: transparent;
+							position: absolute;
+							right: -70px;
+							bottom: -40px;
+						}
+				.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content{
+					max-width: 485px;
+					margin:0 auto;
+				}
+					.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content h2{
+						color: #49485D;
+						font-size: 42px;
+						font-weight: 500;
+						letter-spacing: 0;
+						line-height: 60px;
+						margin-bottom: 64px
+					}
+					.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content ul{
+						margin-bottom: 64px;
+						padding-bottom:10px;
+					}
+						.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content ul li{
+							display: block;
+							color: #20304D;
+							font-size: 18px;
+							font-weight: 500;
+							letter-spacing: 0;
+							line-height: 22px;
+							margin-bottom: 20px;
+							position: relative;
+							padding-left:30px;
+						}
+							.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content ul li:before{
+								display: inline-block;
+								content: "";
+								transform: rotate(45deg);
+								height: 15px;
+								width: 5px;
+								border-bottom: 3px solid #78b13f;
+								border-right: 3px solid #78b13f;
+								position: absolute;
+								left: 0;
+							}
+					.pg-inicial section:nth-child(6) article.lab-container .lab-col .lab-content p{
+						color: #20304D;
+						font-size: 16px;
+						letter-spacing: 0;
+						line-height: 32px;
+						text-align: justify;
+					}
+
+		.pg-inicial section:nth-child(7){
+			width: 1443px;
+			background-color: #49485D;
+			height: 523px;
+			position: relative;
+			overflow:hidden;
+		}
+			.pg-inicial section:nth-child(7) article.lab-container{
+				height: 436px;
+				max-width: 1217px;
+				background-color: #F9F8F4;
+				display: flex;
+				position: absolute;
+				right: 0;
+			    bottom: -85px;
+				padding-top: 99px;
+				
+			}
+				.pg-inicial section:nth-child(7) article.lab-container .lab-col:nth-child(1){
+				    width: 40%;
+				}
+				.pg-inicial section:nth-child(7) article.lab-container .lab-col:nth-child(2){
+					width: 60%;
+				}
+					.pg-inicial section:nth-child(7) article.lab-container .lab-col figure{
+						display: block;
+						height: 337px;
+  						max-width: 281px;
+  						margin:0 auto;
+					}
+						.pg-inicial section:nth-child(7) article.lab-container .lab-col figure img{
+							display: block;
+							width: 100%;
+						}
 						.pg-inicial section:nth-child(7) article.lab-container .lab-col figure figcaption{}
 				.pg-inicial section:nth-child(7) article.lab-container .lab-content{}
-					.pg-inicial section:nth-child(7) article.lab-container .lab-content h6{}
-					.pg-inicial section:nth-child(7) article.lab-container .lab-content h2{}
-					.pg-inicial section:nth-child(7) article.lab-container .lab-content p{}
+					.pg-inicial section:nth-child(7) article.lab-container .lab-content h6{
+						height: 60px;
+						max-width: 145px;
+						color: #78B56D;
+						font-size: 14px;
+						font-weight: 500;
+						letter-spacing: 0;
+						line-height: 60px;
+					}
+					.pg-inicial section:nth-child(7) article.lab-container .lab-content h2{
+						height: 60px;
+						max-width: 350px;
+						color: #49485D;
+						font-size: 28px;
+						font-weight: 500;
+						letter-spacing: 0;
+						line-height: 60px;
+					}
+					.pg-inicial section:nth-child(7) article.lab-container .lab-content p{
+						color: #49485D;
+						font-size: 14px;
+						letter-spacing: 0;
+						line-height: 26px;
+						max-width: 476px;
+					}
 
-		.pg-inicial section:nth-child(8){}
-			.pg-inicial section:nth-child(8) article.lab-container{}
-				.pg-inicial section:nth-child(8) article.lab-container .lab-col{}
-					.pg-inicial section:nth-child(8) article.lab-container .lab-col figure{}
-						.pg-inicial section:nth-child(8) article.lab-container .lab-col figure img{}
+		.pg-inicial section:nth-child(8){
+			margin-top:140px;
+		}
+			.pg-inicial section:nth-child(8) article.lab-container{
+				display: flex;
+			}
+				.pg-inicial section:nth-child(8) article.lab-container .lab-col{
+					width: 50%;
+				}
+					.pg-inicial section:nth-child(8) article.lab-container .lab-col figure{
+						
+					}
+						.pg-inicial section:nth-child(8) article.lab-container .lab-col figure img{
+						    max-width: 520px;
+						}
 						.pg-inicial section:nth-child(8) article.lab-container .lab-col figure figcaption{}
-					.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content h2{}
-					.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content p{}
-					.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul{}
+					.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content{
+						max-width: 485px;
+						margin:0 auto;
+					}
+						.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content h2{
+							color: #49485D;
+							font-size: 41px;
+							font-weight: 500;
+							letter-spacing: 0;
+							line-height: 60px;
+							margin-bottom: 34px;
+						}
+						.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content p{
+							color: #20304D;
+							font-size: 16px;
+							letter-spacing: 0;
+							line-height: 32px;
+							text-align: justify;
+						}
+					.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul{
+						display: flex;
+						max-width: 400px;
+						margin: 0 auto;
+						justify-content: space-between;
+						margin-top: 69px;
+					}
 						.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul li{}
 							.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul li figure{}
-								.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul li figure img{}
+								.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul li figure img{
+									max-width: 154px;
+								}
 								.pg-inicial section:nth-child(8) article.lab-container .lab-col .lab-content ul li figure figcaption{}
 
 		.pg-inicial section:nth-child(9){}
-			.pg-inicial section:nth-child(9) article.lab-container{}
-				.pg-inicial section:nth-child(9) article.lab-container .lab-col{}
-					.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content{}
-						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content h3{}
-						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content p{}
-						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content div.lab-contact{}
-							.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content div.lab-contact p{}
-						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content strong{}
-						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content p{}
-						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content div.lab-link{}
-							.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content div.lab-link a{}
-						.pg-inicial section:nth-child(9) article.lab-container .lab-col .lab-content div.lab-content-map{}
+			.pg-inicial section:nth-child(9) article.lab-container-full{
+				display: flex;
+				margin-top:141px;
+				margin-bottom:113px;
+			}
+				.pg-inicial section:nth-child(9) article.lab-container-full .lab-col:nth-child(1){
+					background-color: #A6B56D;
+					box-shadow: 0 45px 45px 0 rgba(0,0,0,0.03);
+					padding-top: 82px;
+					padding-bottom: 82px;
+				}
+				.pg-inicial section:nth-child(9) article.lab-container-full .lab-col:nth-child(2){}
+				.pg-inicial section:nth-child(9) article.lab-container-full .lab-col{
+					width: 50%;
+				}
+					.pg-inicial section:nth-child(9) article.lab-container-full .lab-col .lab-content{
+						max-width: 428px;
+						margin:0 auto;
+					}
+						.pg-inicial section:nth-child(9) article.lab-container-full .lab-col .lab-content h3{
+							color: #F9F8F4;
+							font-size: 22px;
+							font-weight: 500;
+							letter-spacing: 0;
+							line-height: 60px;
+						}
+						.pg-inicial section:nth-child(9) article.lab-container-full .lab-col .lab-content p{
+							color: #FFFFFF;
+							font-size: 16px;
+							letter-spacing: 0;
+							line-height: 28px;
+							margin-bottom: 36px;
+						}
+						.pg-inicial section:nth-child(9) article.lab-container-full .lab-col .lab-content div.lab-contact{
+							min-height: 90px;
+							max-width: 290px;
+							text-align: left;
+							background-color: #9ba96a;
+							margin-bottom: 25px;
+							padding: 0 40px;
+							padding-top: 30px;
+							padding-bottom: 10px;
+							box-sizing: border-box;
+						}
+							.pg-inicial section:nth-child(9) article.lab-container-full .lab-col .lab-content div.lab-contact b{
+								color: #FFFFFF;
+								font-size: 16px;
+								font-weight: bold;
+								letter-spacing: 0;
+								line-height: 22px;
+								display: block;
+								margin-bottom: 20px;
+							}
+							.pg-inicial section:nth-child(9) article.lab-container-full .lab-col .lab-content div.lab-contact p{}
+						.pg-inicial section:nth-child(9) article.lab-container-full .lab-col .lab-content strong{
+							color: #FFFFFF;
+							font-size: 16px;
+							font-weight: bold;
+							letter-spacing: 0;
+							line-height: 24px;
+						}
+						.pg-inicial section:nth-child(9) article.lab-container-full .lab-col .lab-content p{}
+						.pg-inicial section:nth-child(9) article.lab-container-full .lab-col .lab-content div.lab-link{}
+							.pg-inicial section:nth-child(9) article.lab-container-full .lab-col .lab-content div.lab-link a{
+								height: 60px;
+								width: 264px;
+								border-radius: 10px;
+								background-color: #F9F8F4;
+								display: block;
+								color: #49485D;
+								font-size: 16px;
+								font-weight: 500;
+								letter-spacing: 0;
+								text-decoration: none;
+								text-align: left;
+								line-height: 60px;
+								margin-top: 42px;
+								position: relative;
+								padding-left: 30px;
+								box-sizing: border-box;
+							}
+								.pg-inicial section:nth-child(9) article.lab-container-full .lab-col .lab-content div.lab-link a:before{
+									content: "";
+									display: block;
+									background-image: url(../img/right-arrow.svg);
+									position: absolute;
+									right: 28px;
+									top: 12px;
+									width: 48px;
+									height: 37px;
+									background-position: center;
+									background-size: cover;
+									background-repeat: no-repeat;
+								}
+						.pg-inicial section:nth-child(9) article.lab-container-full .lab-col  div.lab-content-map{}
+							.pg-inicial section:nth-child(9) article.lab-container-full .lab-col div.lab-content-map iframe{
+								width: 100%;
+								min-height: 718px;
+							}
 
 /*FOOTER*/
 	footer{}
-		footer div.lab-container{}
-			footer div.lab-container div.lab-col-3{}
+		footer div.lab-container{
+			display: flex;
+
+		}
+		footer.menuTop div.lab-container div.lab-col .lab-nav ul li.lab-nav-v1:last-child{
+
+		}
+			footer.menuTop div.lab-container div.lab-col .lab-nav ul li.lab-nav-v1:last-child a{
+				color: #A6B56D;
+				background:transparent;
+				text-decoration: underline;
+			}
+			footer div.lab-container div.lab-col-3{
+			    width: 33.4%;
+		    	padding-top:100px;
+		    	margin-bottom:100px;
+			}
 				footer div.lab-container div.copyright{}
-					footer div.lab-container div.copyright span{}
+					footer div.lab-container div.copyright span{
+						color: #49485D;
+						font-size: 14px;
+						letter-spacing: 0;
+						line-height: 17px;
+
+					}
 				footer div.lab-container div.contact{}
-					footer div.lab-container div.contact strong{}
+					footer div.lab-container div.contact strong{
+						color: #49485D;
+						font-size: 18px;
+						font-weight: bold;
+						letter-spacing: 0;
+						line-height: 22px;
+					}
 				footer div.lab-container div.social{}
 					footer div.lab-container div.social ul{}
-						footer div.lab-container div.social ul li{}
+						footer div.lab-container div.social ul li{
+							font-size: 12px;
+						}
 /* MEDIA QUERY */
 @media(max-width: 1430px){
 	
