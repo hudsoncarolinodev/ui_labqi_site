@@ -67,7 +67,32 @@ font-family: 'Open Sans', sans-serif;
 		padding-top: 98.2px;
 		box-sizing: border-box;
 	}
-
+	body.sombra::before{
+		content: "";
+		display: block;
+		top:0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background:rgb(0 0 0 / 68%);
+		z-index: 3;
+		position: fixed;
+		animation-duration: 0.5s;
+		animation-name: sombraAnimation;
+	}
+	body.sombra{
+		overflow:hidden;
+	}
+	@keyframes sombraAnimation {
+	  from {
+	  	height: 0vh;
+	  	background:transparent;
+	  }
+	  to   { 
+	  	height: 100vh;
+	  	background:rgb(0 0 0 / 68%);
+	   }
+	}
 /*ESTILOS GERAIS*/
 	.lab-container{
 		width: 100%;
@@ -523,8 +548,23 @@ font-family: 'Open Sans', sans-serif;
 								padding-left: 81px;
 								margin-bottom: 10px;
 								cursor: pointer;
+								height: 40px;
 								position: relative;
+								-webkit-transition: ease-in-out .2s;
+								-moz-transition: ease-in-out .2s;
+								-ms-transition: ease-in-out .2s;
+								-o-transition: ease-in-out .2s;
+								transition: ease-in-out .2s;
 							}
+								.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col div.lab-content ul li.localizacao-active{
+									
+									height: 83px;
+									-webkit-transition: ease-in-out .2s;
+									-moz-transition: ease-in-out .2s;
+									-ms-transition: ease-in-out .2s;
+									-o-transition: ease-in-out .2s;
+									transition: ease-in-out .2s;
+								}
 								.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col div.lab-content ul li span{
 									height: 40px;
 									width: 33px;
@@ -549,7 +589,16 @@ font-family: 'Open Sans', sans-serif;
 									font-size: 14px;
 									letter-spacing: 0;
 									line-height: 24px;
-									display: none;
+									opacity: 0;
+
+								}
+								.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col div.lab-content ul li p.show-sobre{
+									-webkit-transition: ease-in-out .2s;
+									-moz-transition: ease-in-out .2s;
+									-ms-transition: ease-in-out .2s;
+									-o-transition: ease-in-out .2s;
+									transition: ease-in-out .2s;
+									opacity: 0.8;
 
 								}
 					.pg-inicial section:nth-child(5) article.lab-container-full div.lab-col figure{
@@ -931,6 +980,103 @@ font-family: 'Open Sans', sans-serif;
 			border-top: 2px solid rgb(190 190 190 / 0.2);
 			margin: 80px auto 0;
 		}
+.lab-form-contact{
+    position: fixed;
+    left: -100%;
+    z-index: 3;
+    background-color: #fff;
+    height: 620px;
+    max-width: 450px;
+    padding: 68px 58px;
+    width: 100%;
+	border-radius: 1px;
+	display: none;
+	box-shadow: 0 17px 40px 0 rgba(0,0,0,0.25);
+	
+}
+	.lab-form-contact.openForm{
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		display: block;
+		animation-duration: 1s;
+		animation-name: displayForm;
+	}
+	@keyframes displayForm {
+	  from {
+	  	left: -100%;
+	  }
+	  to   { 
+	  	left: 50%;
+	   }
+	}
+	.lab-form-contact span::before{
+		content: '\d7';
+		display: block;
+		position: absolute;
+		right: 40px;
+		top: 40px;
+		color: #78B56D;
+		font-size: 32px;
+		cursor: pointer;
+	}
+	.lab-form-contact .content-input{
+		margin:0 auto;
+		margin-bottom: 45px;
+		max-width: 381px;
+		position: relative;
+	}
+		.lab-form-contact h2{
+			color: #051026;
+			font-size: 42px;
+			font-weight: bold;
+			letter-spacing: 0;
+			line-height: 50px;
+			max-width: 441px;
+			margin:0 auto;
+			margin-bottom: 30px;
+
+		}
+			.lab-form-contact label{
+				height: 17px;
+				width: 50px;
+				color: #051026;
+				font-family: "Open Sans";
+				font-size: 12px;
+				letter-spacing: 0;
+				line-height: 17px;
+				position: absolute;
+				bottom: -25px;
+			}
+			.lab-form-contact input{
+				color: #051026;
+				font-family: "Open Sans";
+				font-size: 16px;
+				letter-spacing: 0;
+				line-height: 22px;
+				width: 100%;
+				border:none;
+				outline: none;
+				border-bottom: solid 1px #E9E9E9;
+				display: block;
+				padding:10px;
+			}
+			.lab-form-contact button{
+			  	height: 60px;
+				width: 163px;
+				border-radius: 10px;
+				background: linear-gradient(132.01deg, #94DB87 0%, #57D6C4 100%);
+				border:none;
+				color: #FFFFFF;
+				font-family: Rubik;
+				font-size: 16px;
+				font-weight: 500;
+				letter-spacing: 0;
+				line-height: 19px;
+			    margin-top: 50px;
+			    outline: none;
+			    cursor: pointer;
+			}		
 /* MEDIA QUERY */
 @media(max-width: 1430px){
 	

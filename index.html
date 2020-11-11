@@ -25,7 +25,7 @@
 <body>
 
 	<!-- TOPO -->
-	<header class="menuTop">
+	<header class="menuTop ">
 		<div class="lab-container">
 			<div class="lab-col">
 				<figure>
@@ -54,7 +54,7 @@
 						<li>
 							<a href="">Contato</a>
 						</li>
-						<li class="lab-nav-v1">
+						<li class="lab-nav-v1 openFormContact">
 							<a href="">Resultados Online</a>
 						</li>
 					</ul>
@@ -73,7 +73,7 @@
 					<h2>LabQi Análises de água</h2>
 					<p>Laboratório em Curitiba com infraestrutura de última geração e equipamentos portáteis para coletas e análises em campo</p>
 					
-					<div class="link">
+					<div class="link" class="openFormContact">
 						<a href="">Entre em contato</a>
 					</div>
 					
@@ -496,25 +496,37 @@
 
 	</footer>
 	
-	<div class="lab-form-contact hidden" >
+	<div class="lab-form-contact">
+		<span class="close"></span>
 		<h2>Fale conosco</h2>
 
-		<label for="nome">Nome</label>
-		<input type="text" name="nome" id="nome" placeholder="nome">
+		<div class="content-input">
+			<label for="nome">Nome</label>
+			<input type="text" name="nome" id="nome" placeholder="nome">
+		</div>
 
-		<label for="telefone">Telefone</label>
-		<input type="text" name="telefone" id="telefone" placeholder="DDD + Telefone">
+		<div class="content-input">
+			<label for="telefone">Telefone</label>
+			<input type="text" name="telefone" id="telefone" placeholder="DDD + Telefone">
+		</div>
 
-		<label for="email">E-mail</label>
-		<input type="text" name="nome" id="email" placeholder="exemplo@email.com.br">
+		<div class="content-input">
+			<label for="email">E-mail</label>
+			<input type="text" name="nome" id="email" placeholder="exemplo@email.com.br">
+		</div>
 
-		<label for="empresa">Empresa</label>
-		<input type="text" name="nome" id="empresa" placeholder="Empresa">
+		<div class="content-input">
+			<label for="empresa">Empresa</label>
+			<input type="text" name="nome" id="empresa" placeholder="Empresa">
+		</div>
 
-		<label for="cidade">Cidade</label>
-		<input type="text" name="nome" id="cidade" placeholder="Cidade">
-
-		<button>Enviar</button>
+		<div class="content-input">
+			<label for="cidade">Cidade</label>
+			<input type="text" name="nome" id="cidade" placeholder="Cidade">
+		</div>
+		<div class="content-input">
+			<button>Enviar</button>
+		</div>
 	</div>
 
 	<div class="lab-form-login hidden">
@@ -530,7 +542,9 @@
 	</div>
 
 	<!-- JS -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src='http://homologacao.labqi.eco.br/wp-content/themes/labqi/js/jquery.js' id='jquery-core-js'></script>
+	<script src='http://homologacao.labqi.eco.br/wp-content/themes/labqi/js/jquery.min.js' id='ncob-jquery-js'></script>
+	<script src='//code.jquery.com/jquery-migrate-1.2.1.min.js?ver=14092020' id='ncob-jquery-migrate-js'></script>
 	<script type="text/javascript" src="js/geral.js"></script>
 	
 </body>
