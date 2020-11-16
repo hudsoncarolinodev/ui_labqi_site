@@ -31,20 +31,20 @@
 	let openFormContact = document.querySelector(".openFormContact")
 	let closeFormContact = document.querySelector(".lab-form-contact span.close")
 	
-	// openFormContact.addEventListener("click",(e) => {
-	// 	e.preventDefault()
-	// 	body.classList.add("sombra")
-	// 	labFormContact.classList.add("openForm")
-	// });
+	openFormContact.addEventListener("click",(e) => {
+		e.preventDefault()
+		body.classList.add("sombra")
+		labFormContact.classList.add("openForm")
+	});
 
-	// closeFormContact.addEventListener("click",(e) => {
-	// 	e.preventDefault()
+	closeFormContact.addEventListener("click",(e) => {
+		e.preventDefault()
 
-	// 	body.classList.remove("sombra")
-	// 	labFormContact.classList.remove("openForm")
+		body.classList.remove("sombra")
+		labFormContact.classList.remove("openForm")
 
 		
-	// });
+	});
 
 	$('.menuTop div.lab-container div.lab-col .lab-nav ul li.lab-nav-v1 a').click(function(event){
 		event.preventDefault();
