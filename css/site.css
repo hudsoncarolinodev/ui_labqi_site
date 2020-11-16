@@ -1010,7 +1010,7 @@ font-family: 'Open Sans', sans-serif;
 	  	left: 50%;
 	   }
 	}
-	.lab-form-contact span::before{
+	.lab-form-contact span::before, .lab-form-login span::before{
 		content: '\d7';
 		display: block;
 		position: absolute;
@@ -1079,8 +1079,9 @@ font-family: 'Open Sans', sans-serif;
 			}
 .lab-form-login{
     position: fixed;
-    /*left: -100%;*/
-    top: 0;
+    left: -100%;
+    /*left: 50%;*/
+    top: 50%;
     z-index: 3;
     background-color: #fff;
     height: 524px;
@@ -1088,9 +1089,31 @@ font-family: 'Open Sans', sans-serif;
     padding: 68px 58px;
     width: 100%;
 	border-radius: 1px;
-	/*display: none;*/
+	display: none;
+	/*display: block;*/
 	box-shadow: 0 17px 40px 0 rgba(0,0,0,0.25);
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 	
+}
+.lab-form-login.openForm{
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	display: block;
+	animation-duration: 1s;
+	animation-name: displayLogin;
+}
+@keyframes displayLogin {
+	from {
+		left: -100%;
+	}
+	to   { 
+		left: 50%;
+	}
 }
 	.lab-form-login .content-input{
 		margin:0 auto;
@@ -1134,20 +1157,40 @@ font-family: 'Open Sans', sans-serif;
 				padding:10px;
 			}
 			.lab-form-login button{
-			  	height: 60px;
-				width: 163px;
 				border-radius: 10px;
 				background: linear-gradient(132.01deg, #94DB87 0%, #57D6C4 100%);
-				border:none;
+				border: none;
 				color: #FFFFFF;
 				font-family: Rubik;
 				font-size: 16px;
 				font-weight: 500;
 				letter-spacing: 0;
 				line-height: 19px;
-			    margin-top: 50px;
-			    outline: none;
-			    cursor: pointer;
+				margin-top: 50px;
+				outline: none;
+				cursor: pointer;
+				position: relative;
+				width: auto;
+				height: auto;
+				padding: 23px 90px 25px 32px;
+			}
+			.lab-form-login button::before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: 23px;
+				width: 28px;
+				height: 16px;
+				display: block;
+				background-image: url('../img/rightw-arrow.svg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
 			}
 
 .pg{}
