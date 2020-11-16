@@ -1,0 +1,85 @@
+/* CSS RESULTADOS */
+.pg-resultados{
+
+}
+	.pg-resultados section{
+		background-color: #ebebeb;
+		padding: 60px 0 50px;
+	}
+		.pg-resultados section .lab-container{
+			max-width: 584px;
+		}
+			.pg-resultados section .lab-container .lab-content{
+
+			}
+				.pg-resultados section .lab-container .lab-content h2{
+					font-size: 42px;
+				}
+				.pg-resultados section .lab-container .lab-content ul{
+					margin: 40px 0 0;
+				}
+					.pg-resultados section .lab-container .lab-content ul li{
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						padding: 0 0 28px;
+						margin: 0 0 29px;
+						border-bottom: 1px solid rgb(151 151 151 / 0.2);
+					}
+						.pg-resultados section .lab-container .lab-content ul li .lab-col{
+
+						}
+							.pg-resultados section .lab-container .lab-content ul li .lab-col .icon{
+
+							}
+								.pg-resultados section .lab-container .lab-content ul li .lab-col .icon img{
+									border-radius: 10px;
+									width: 100%;
+									max-width: 76px;
+								}
+							.pg-resultados section .lab-container .lab-content ul li .lab-col .content{
+								padding-left: 24px;
+							}
+								.pg-resultados section .lab-container .lab-content ul li .lab-col .content p{
+									font-size: 16px;
+									line-height: 19px;
+									font-weight: 500;
+									margin: 0 0 8px;
+								}
+								.pg-resultados section .lab-container .lab-content ul li .lab-col .content span{
+									font-size: 14px;
+									line-height: 16px;
+									color: #A6B56D;
+								}
+							.pg-resultados section .lab-container .lab-content ul li .lab-col .link{
+
+							}
+								.pg-resultados section .lab-container .lab-content ul li .lab-col .link a{
+									position: relative;
+									padding: 10px 52px 11px 15px;
+									background: linear-gradient(132.01deg, #94DB87 0%, #57D6C4 100%);
+								}
+								.pg-resultados section .lab-container .lab-content ul li .lab-col .link a::before{
+									content: '';
+									position: absolute;
+									top: 50%;
+									right: 16px;
+									display: block;
+									width: 23px;
+									height: 20px;
+									background-image: url('../img/cloud.svg');
+									background-size: cover;
+									background-position: center;
+									background-repeat: no-repeat;
+									transform: translateY(-50%);	
+									-webkit-transform: translateY(-50%);	
+									-moz-transform: translateY(-50%);	
+									-ms-transform: translateY(-50%);	
+									-o-transform: translateY(-50%);	
+								}
+						.pg-resultados section .lab-container .lab-content ul li .lab-col-2{}
+						.pg-resultados section .lab-container .lab-content ul li .lab-col-7{
+							flex-basis: 56.6%;
+						}
+						.pg-resultados section .lab-container .lab-content ul li .lab-col-3{}
+/* CSS RESULTADOS */

@@ -30,8 +30,8 @@ font-family: 'Open Sans', sans-serif;
 
 
 /* IMPORTAÇÃO DE ARQUIVOS*/
-	/*@import url("fonts.css");*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	@import url("resultados.css");
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* IMPORTAÇÃO MEDIA QUERYS*/
 
@@ -980,7 +980,7 @@ font-family: 'Open Sans', sans-serif;
 			border-top: 2px solid rgb(190 190 190 / 0.2);
 			margin: 80px auto 0;
 		}
-.lab-form-contact{
+.lab-form-contact, .lab-form-login{
     position: fixed;
     left: -100%;
     z-index: 3;
@@ -1020,13 +1020,13 @@ font-family: 'Open Sans', sans-serif;
 		font-size: 32px;
 		cursor: pointer;
 	}
-	.lab-form-contact .content-input{
+	.lab-form-contact .content-input, .lab-form-login .content-input{
 		margin:0 auto;
 		margin-bottom: 45px;
 		max-width: 381px;
 		position: relative;
 	}
-		.lab-form-contact h2{
+		.lab-form-contact h2, .lab-form-login h2{
 			color: #051026;
 			font-size: 42px;
 			font-weight: bold;
@@ -1037,7 +1037,7 @@ font-family: 'Open Sans', sans-serif;
 			margin-bottom: 30px;
 
 		}
-			.lab-form-contact label{
+			.lab-form-contact label, .lab-form-login label{
 				height: 17px;
 				width: 50px;
 				color: #051026;
@@ -1048,7 +1048,7 @@ font-family: 'Open Sans', sans-serif;
 				position: absolute;
 				bottom: -25px;
 			}
-			.lab-form-contact input{
+			.lab-form-contact input, .lab-form-login input{
 				color: #051026;
 				font-family: "Open Sans";
 				font-size: 16px;
@@ -1061,7 +1061,7 @@ font-family: 'Open Sans', sans-serif;
 				display: block;
 				padding:10px;
 			}
-			.lab-form-contact button{
+			.lab-form-contact button, .lab-form-login button{
 			  	height: 60px;
 				width: 163px;
 				border-radius: 10px;
@@ -1076,7 +1076,162 @@ font-family: 'Open Sans', sans-serif;
 			    margin-top: 50px;
 			    outline: none;
 			    cursor: pointer;
-			}		
+			}
+.lab-form-login{
+    position: fixed;
+    /*left: -100%;*/
+    top: 0;
+    z-index: 3;
+    background-color: #fff;
+    height: 524px;
+    max-width: 524px;
+    padding: 68px 58px;
+    width: 100%;
+	border-radius: 1px;
+	/*display: none;*/
+	box-shadow: 0 17px 40px 0 rgba(0,0,0,0.25);
+	
+}
+	.lab-form-login .content-input{
+		margin:0 auto;
+		margin-bottom: 45px;
+		max-width: 381px;
+		position: relative;
+	}
+		.lab-form-login h2{
+			color: #051026;
+			font-size: 42px;
+			font-weight: bold;
+			letter-spacing: 0;
+			line-height: 50px;
+			max-width: 441px;
+			margin:0 auto;
+			margin-bottom: 30px;
+
+		}
+			.lab-form-login label{
+				height: 17px;
+				width: 50px;
+				color: #051026;
+				font-family: "Open Sans";
+				font-size: 12px;
+				letter-spacing: 0;
+				line-height: 17px;
+				position: absolute;
+				bottom: -25px;
+			}
+			.lab-form-login input{
+				color: #051026;
+				font-family: "Open Sans";
+				font-size: 16px;
+				letter-spacing: 0;
+				line-height: 22px;
+				width: 100%;
+				border:none;
+				outline: none;
+				border-bottom: solid 1px #E9E9E9;
+				display: block;
+				padding:10px;
+			}
+			.lab-form-login button{
+			  	height: 60px;
+				width: 163px;
+				border-radius: 10px;
+				background: linear-gradient(132.01deg, #94DB87 0%, #57D6C4 100%);
+				border:none;
+				color: #FFFFFF;
+				font-family: Rubik;
+				font-size: 16px;
+				font-weight: 500;
+				letter-spacing: 0;
+				line-height: 19px;
+			    margin-top: 50px;
+			    outline: none;
+			    cursor: pointer;
+			}
+
+.pg{}
+	.pg .pop-up-legislacao{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(255 255 255 / 0.6);
+		padding: 87px 0 0;
+	}
+		.pg .pop-up-legislacao .lab-container{
+			max-width: 700px;
+		}
+			.pg .pop-up-legislacao .lab-container .lab-content{
+				position: relative;
+			}
+				.pg .pop-up-legislacao .lab-container .lab-content .close-button{
+					position: absolute;
+					right: 0;
+					top: 0;
+					cursor: pointer;
+				}
+					.pg .pop-up-legislacao .lab-container .lab-content .close-button img{
+						width: 100%;
+						max-width: 24px;
+					}
+				.pg .pop-up-legislacao .lab-container .lab-content h2{
+					font-size: 42px;
+					line-height: 50px;
+					color: #051028;
+				}
+				.pg .pop-up-legislacao .lab-container .lab-content ul{
+					margin: 95px 0 0;
+				}
+					.pg .pop-up-legislacao .lab-container .lab-content ul li{
+						box-shadow: 0 14px 44px 0 rgba(0,0,0,0.06);
+						-webkit-box-shadow: 0 14px 44px 0 rgba(0,0,0,0.06);
+						-moz-box-shadow: 0 14px 44px 0 rgba(0,0,0,0.06);
+						-ms-box-shadow: 0 14px 44px 0 rgba(0,0,0,0.06);
+						-o-box-shadow: 0 14px 44px 0 rgba(0,0,0,0.06);
+						padding: 32px 30px;
+						margin: 0 0 20px;
+						display: flex;
+						flex-direction: row;
+						position: relative;
+						cursor: pointer;
+					}
+					.pg .pop-up-legislacao .lab-container .lab-content ul li::before{
+						content: '';
+						position: absolute;
+						top: 50%;
+						right: 30px;
+						display: block;
+						width: 25px;
+						height: 15px;
+						background-image: url('../img/lg.svg');
+						background-position: center;
+						background-size: cover;
+						background-repeat: no-repeat;
+						transform: translateY(-50%);
+						-webkit-transform: translateY(-50%);
+						-moz-transform: translateY(-50%);
+						-ms-transform: translateY(-50%);
+						-o-transform: translateY(-50%);
+					}
+						.pg .pop-up-legislacao .lab-container .lab-content ul li .lab-col{}
+						.pg .pop-up-legislacao .lab-container .lab-content ul li .lab-col:nth-child(1){
+							flex-basis: 25.94%;
+						}
+							.pg .pop-up-legislacao .lab-container .lab-content ul li .lab-col h3{
+								font-size: 16px;
+								line-height: 34px;
+								color: #20304D;
+								font-weight: 400;
+							}
+							.pg .pop-up-legislacao .lab-container .lab-content ul li .lab-col p{
+								font-size: 12px;
+								line-height: 34px;
+								color: rgb(32 48 77 / 0.5);
+								text-transform: uppercase;
+								font-weight: 500;
+							}
 /* MEDIA QUERY */
 @media(max-width: 1430px){
 	
